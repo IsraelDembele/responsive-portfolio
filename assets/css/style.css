@@ -1,15 +1,41 @@
+li{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
 #eagle{
     width: 100px; 
     height: 100px;
+    float: left;
+    margin: 10px;
 } 
 .name{
     background-color: #4aaaa5;
     color: white;
-    
+    width: 150px;
+    text-align: center;
+    display: inline-block;
 } 
+.body-contain{
+    float: right;
+    padding-top: 10px;
+}
+
+.container{
+    margin: 15px 10%;
+}
+
+.row{
+    margin: 15px;
+    padding: 10px;
+}
+
 body{
     background-image: url("../img/bg.jpg");
     padding: 0;
+    margin: 0;
 } 
 
 .header{
@@ -27,6 +53,9 @@ body{
     background-color: darkslategrey; 
     border-top: #4aaaa5 10px solid; 
     color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 
 }  
 
@@ -51,6 +80,12 @@ body{
     #eagle{
         width: 100%;
         height: 150px;
-
+    }
+    .body-contain{
+        width: 100%;
+        float: none;
+    }
+    .name{
+        width: 100%;
     }
 }
